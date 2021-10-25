@@ -1,12 +1,10 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import "../node_modules/bootstrap/scss/bootstrap";
 
 :root {
     --primary-color: #007AF3;
 }
-
 body {
     
     // background-image: url(../images/pexels-negative-space-92904.jpg);
@@ -14,6 +12,8 @@ body {
     margin: 0;
     font-family: 'Poppins';
 }
+
+
 
 .navbar {
     background: transparent;
@@ -56,7 +56,7 @@ section {
 }
 
 .hero {
-    text-align: center;
+    text-align: left;
 }
 
 .left-col {
@@ -92,8 +92,10 @@ section {
 
 
 section.features-section {
+
     background: #20272E;
     color: white;
+
 }
 
 ul.features-list {
@@ -287,7 +289,7 @@ nav {
     }
 
     section {
-        padding: 10em 4em;
+        padding: 5em 4em;
     }
 
     .hero .container {
@@ -296,7 +298,7 @@ nav {
         text-align: left;
 
         .left-col {
-            margin: 3em 3em 0 5em;
+            margin: 0;
 
             h1 {
                 font-size: 3em;
@@ -396,7 +398,6 @@ nav {
         }
     }
 }
-
 #login-form{
     display: none;
     /*hides form*/
@@ -407,7 +408,7 @@ nav {
     height: 480px;
     position: relative;
     margin: 2% auto;
-    background: rgba(0,0,0,0);
+    background: rgba(250, 246, 246, 0.986);
     padding: 10px;
     overflow: hidden;
 }
@@ -432,12 +433,18 @@ nav {
     position: absolute;
     width: 110px;
     height: 100%;
-    background: #f3c693;
+    background: rgb(5, 67, 238);
     border-radius: 30px;
     transition: .5s;
 }
 .input-group-login{
     top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-group-register{
+    top: 120px;
     position: absolute;
     width: 280px;
     transition: .5s;
@@ -449,7 +456,7 @@ nav {
     border-left: 0;
     border-top: 0;
     border-right: 0;
-    border-bottom: 1px solid rgb(5, 67, 238);
+    border-bottom: 1px solid #999;
     outline: none;
     background: transparent;
 }
@@ -459,7 +466,7 @@ nav {
     cursor: pointer;
     display: block;
     margin: auto;
-    background: #f3c693;
+    background: rgb(5, 67, 238);
     border: 0;
     outline: none;
     border-radius: 30px;
@@ -467,12 +474,7 @@ nav {
 .check-box{
     margin: 30px 10px 34px 0;
 }
-span{
-    color:#007AF3;
-    font-size: 12px;
-    bottom: 68px;
-    position: absolute;
-}
+
 #login{
     left: 50px;
 }
@@ -480,3 +482,11 @@ span{
     color: white;
     font-size: 15;
 }
+#register{
+    left: 450px;
+}
+#register input{
+    color: #007AF3;
+    font-size: 15;
+}
+
